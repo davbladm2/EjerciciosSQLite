@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">EjerciciosSQLite</string>
+    <string name="ejercicio1">Ejercicio 1</string>
+    <string name="ejercicio2">Ejercicio 2</string>
+    <string name="codigo">Código:</string>
+    <string name="nombre">Nombre:</string>
+    <string name="telefono">Telefono:</string>
+    <string name="buttonInsertar">Insertar</string>
+    <string name="buttonActualizar">Actualizar</string>
+    <string name="buttonEliminar">Eliminar</string>
+    <string name="buttonConsultar">Consultar</string>
+    <string name="isbn">ISBN:</string>
+    <string name="titulo">Titulo:</string>
+    <string name="autor">Autor:</string>
+    <string name="numPaginas">Nº Páginas:</string>
+    <string name="genero">Genero:</string>
+</resources>

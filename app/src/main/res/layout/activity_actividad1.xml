@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_actividad1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.dm2.ejerciciossqlite.Actividad1">
+
+
+    <TextView
+        android:id="@+id/textViewCodigo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/codigo"
+        android:layout_marginTop="18dp"
+        android:layout_marginRight="10dp"/>
+    <EditText
+        android:id="@+id/editTextCodigo"
+        android:layout_toEndOf="@+id/textViewCodigo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="number" />
+
+    <TextView
+        android:id="@+id/textViewNombre"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textViewCodigo"
+        android:text="@string/nombre"
+        android:layout_marginTop="25dp"
+        android:layout_marginRight="10dp"/>
+    <EditText
+        android:id="@+id/editTextNombre"
+        android:layout_toEndOf="@+id/textViewNombre"
+        android:layout_below="@+id/textViewCodigo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"/>
+
+    <TextView
+        android:id="@+id/textViewTelefono"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textViewNombre"
+        android:text="@string/telefono"
+        android:layout_marginTop="25dp"
+        android:layout_marginRight="10dp"/>
+    <EditText
+        android:id="@+id/editTextTelefono"
+        android:layout_toEndOf="@+id/textViewTelefono"
+        android:layout_below="@+id/textViewNombre"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:inputType="number"/>
+
+    <Button
+        android:id="@+id/buttonInsertar"
+        android:layout_below="@+id/textViewTelefono"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/buttonInsertar"
+        android:layout_marginTop="20dp"
+        android:textSize="13dp"
+        android:onClick="pulsados"/>
+    <Button
+        android:id="@+id/buttonActualizar"
+        android:layout_toEndOf="@+id/buttonInsertar"
+        android:layout_below="@+id/textViewTelefono"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/buttonActualizar"
+        android:layout_marginTop="20dp"
+        android:textSize="13dp"
+        android:onClick="pulsados"/>
+    <Button
+        android:id="@+id/buttonEliminar"
+        android:layout_toEndOf="@+id/buttonActualizar"
+        android:layout_below="@+id/textViewTelefono"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/buttonEliminar"
+        android:layout_marginTop="20dp"
+        android:textSize="13dp"
+        android:onClick="pulsados"/>
+    <Button
+        android:id="@+id/buttonConsultar"
+        android:layout_toEndOf="@+id/buttonEliminar"
+        android:layout_below="@+id/textViewTelefono"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/buttonConsultar"
+        android:layout_marginTop="20dp"
+        android:textSize="13dp"
+        android:onClick="pulsados"/>
+
+    <TextView
+        android:id="@+id/textViewContenido"
+        android:layout_below="@+id/buttonInsertar"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+</RelativeLayout>
